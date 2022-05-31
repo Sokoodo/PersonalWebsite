@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GuruAbleV1.7.0
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
@@ -25,3 +26,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+## Terminal Commands
+
+1. Install NodeJs from [NodeJs Official Page](https://nodejs.org/en).
+2. Open Terminal
+3. Go to your file project
+4. Run in terminal: ```npm install -g @angular/cli```
+5. Then: ```npm install```
+6. And: ```npm start```
+7. Navigate to [localhost:4200](localhost:4200)
+>>>>>>> 60e54868ccf434e3811ad35dde50f4508a8c8efe
