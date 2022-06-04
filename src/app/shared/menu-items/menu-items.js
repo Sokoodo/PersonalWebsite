@@ -446,8 +446,8 @@ var MENUITEMS = [
                     }
                 ]
             }, {
-                state: 'simple-page',
-                name: 'Simple Page',
+                state: 'hard-page',
+                name: 'Hard Page',
                 type: 'link',
                 icon: 'ti-layout-sidebar-left'
             }

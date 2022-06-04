@@ -31,8 +31,11 @@ const routes: Routes = [
         path: 'user',
         loadChildren: () => import('./pages/user/profile/profile.module').then(m => m.ProfileModule)
       }, {
-        path: 'simple-page',
-        loadChildren: () => import('./pages/simple-page/simple-page.module').then(m => m.SimplePageModule)
+        path: 'hard-page',
+        loadChildren: () => import('./pages/hard-page/hard-page.module').then(m => m.HardPageModule)
+      }, {
+        path: 'crypto',
+        loadChildren: () => import('./pages/crypto/crypto-section.module').then(m => m.CryptoSectionModule)
       }
     ]
   },

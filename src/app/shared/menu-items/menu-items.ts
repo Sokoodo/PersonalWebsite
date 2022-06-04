@@ -68,7 +68,33 @@ const MENUITEMS = [
     ],
   },
   {
-    label: 'Tables',
+    label: 'Investments',
+    main: [
+      {
+        state: 'stocks',
+        short_label: 'S',
+        name: 'Stocks',
+        type: 'link',
+        icon: 'ti-money'
+      },
+      {
+        state: 'crypto',
+        short_label: 'C',
+        name: 'Crypto',
+        type: 'link',
+        icon: 'ti-receipt'
+      },
+      {
+        state: 'p2p-lending',
+        short_label: 'P',
+        name: 'P2P Lending',
+        type: 'link',
+        icon: 'ti-hand-open'
+      }
+    ]
+  },
+  {
+    label: 'Map And Extra Pages ',
     main: [
       {
         state: 'bootstrap-table',
@@ -76,12 +102,7 @@ const MENUITEMS = [
         name: 'Bootstrap Table',
         type: 'link',
         icon: 'ti-receipt'
-      }
-    ]
-  },
-  {
-    label: 'Map And Extra Pages ',
-    main: [
+      },
       {
         state: 'map',
         short_label: 'M',
@@ -172,24 +193,11 @@ const MENUITEMS = [
         ]
       },
       {
-        state: 'simple-page',
+        state: 'hard-page',
         short_label: 'S',
         name: 'Simple Page',
         type: 'link',
         icon: 'ti-layout-sidebar-left'
-      }
-    ]
-  }, {
-    label: 'Support',
-    main: [
-      {
-        state: 'Upgrade To Pro',
-        short_label: 'U',
-        external: 'https://codedthemes.com/item/guru-able-admin-template/',
-        name: 'Upgrade To Pro',
-        type: 'external',
-        icon: 'ti-layout-list-post',
-        target: true
       }
     ]
   }

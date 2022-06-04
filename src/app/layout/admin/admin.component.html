@@ -18,7 +18,8 @@
             <i class="ti-menu"></i>
           </a>
           <a [routerLink]="['/']">
-            <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo"/>
+            <img class="mx-2 img-40 img-radius" src="assets/images/mpwWhiteLogo.png" alt="Theme-Logo"/>
+            <small>&ensp;&ensp;My Personal Website</small>
           </a>
           <a (click)="onMobileMenu()" class="mobile-options">
             <i class="ti-more"></i>
@@ -390,6 +391,7 @@
     </div>
     <!-- right-bar inner chat end -->
 
+    <!--Left Navbar -->
     <div class="pcoded-main-container" [style.margin-top]="headerFixedMargin">
       <div class="pcoded-wrapper">
         <nav id="main_navbar" class=" pcoded-navbar" (clickOutside)="onClickedOutside($event)" [exclude]="'#mobile-collapse'" [attr.pcoded-header-position]="pcodedHeaderPosition" [attr.navbar-theme]="navBarTheme" [attr.active-item-theme]="activeItemTheme" sub-item-theme="theme2" active-item-style="style0" [attr.pcoded-navbar-position]="pcodedSidebarPosition">
@@ -397,10 +399,10 @@
           <div class="pcoded-inner-navbar main-menu" appAccordion>
             <div class="">
               <div class="main-menu-header">
-                <img class="img-40 img-radius" src="assets/images/avatar-4.jpg" alt="User-Profile-Image">
+                <img class="img-40 img-radius" src="assets/images/profilePic.jpeg" alt="User-Profile-Image">
                 <div class="user-details">
-                  <span>John Doe</span>
-                  <span id="more-details" (click)="toggleOpenedSidebar()">UX Designer<i class="ti-angle-down"></i></span>
+                  <span>Francesco Santarelli</span>
+                  <span id="more-details" (click)="toggleOpenedSidebar()">Junior Developer<i class="ti-angle-down"></i></span>
                 </div>
               </div>
               <div class="main-menu-content">
@@ -424,14 +426,6 @@
               <div *ngFor="let asideItems of menuItems.getAll()" class="d-color">
                 <div class="pcoded-navigatio-lavel" [attr.menu-title-theme]="menuTitleTheme">{{asideItems.label}}</div>
                 <ul class="pcoded-item pcoded-left-item" [attr.item-border]="itemBorder" [attr.item-border-style]="itemBorderStyle" [attr.subitem-border]="subItemBorder" *ngFor="let asideItem of asideItems.main" appAccordionLink group="{{asideItem.state}}">
-                  <li [routerLinkActive]="['active']" *ngIf="asideItem.type === 'external'" appAccordionLink group="{{asideItem.state}}">
-                    <a href="{{asideItem.external}}" target="{{asideItem.target ? '_blank' : '_self'}}" appAccordionToggle>
-                      <span class="pcoded-micon"><i class="{{ asideItem.icon }}"></i><b>{{ asideItem.short_label }}</b></span>
-                      <span class="pcoded-mtext">{{ asideItem.name }}</span>
-                      <span *ngFor="let asideBadge of asideItem.badge" class="pcoded-badge label label-{{ asideBadge.type }}">{{asideBadge.value}}</span>
-                      <span class="pcoded-mcaret"></span>
-                    </a>
-                  </li>
 
                   <li [routerLinkActive]="['active']" *ngIf="asideItem.type === 'link'" appAccordionLink group="{{asideItem.state}}">
                     <a [routerLink]="['/', asideItem.main_state, asideItem.state]" target="{{asideItem.target ? '_blank' : '_self'}}" appAccordionToggle *ngIf="asideItem.main_state; else mainContent">
@@ -449,6 +443,7 @@
                       </a>
                     </ng-template>
                   </li>
+
                   <li [routerLinkActive]="['active']" *ngIf="asideItem.type === 'sub'" class="pcoded-hasmenu" [attr.dropdown-icon]="dropDownIcon" [attr.subitem-icon]="subItemIcon" appAccordionLink group="{{asideItem.state}}">
                     <a [routerLinkActive]="['active']" href="javascript:;" appAccordionToggle>
                       <span class="pcoded-micon"><i class="{{ asideItem.icon }}"></i><b>{{ asideItem.short_label }}</b></span>
