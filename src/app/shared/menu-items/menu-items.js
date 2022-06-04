@@ -316,7 +316,49 @@ var MENUITEMS = [
                         name: 'User Card'
                     }
                 ]
-            }
+            }, , {
+              state: '',
+              name: 'Menu Levels',
+              type: 'sub',
+              icon: 'ti-direction-alt',
+              children: [
+                  {
+                      state: '',
+                      name: 'Menu Level 2.1',
+                  }, {
+                      state: '',
+                      name: 'Menu Level 2.2',
+                      type: 'sub',
+                      children: [
+                          {
+                              state: '',
+                              name: 'Menu Level 2.2.1'
+                          },
+                          {
+                              state: '',
+                              name: 'Menu Level 2.2.2'
+                          }
+                      ]
+                  }, {
+                      state: '',
+                      name: 'Menu Level 2.3'
+                  }, {
+                      state: '',
+                      name: 'Menu Level 2.4',
+                      type: 'sub',
+                      children: [
+                          {
+                              state: '',
+                              name: 'Menu Level 2.4.1'
+                          },
+                          {
+                              state: '',
+                              name: 'Menu Level 2.4.2'
+                          }
+                      ]
+                  }
+              ]
+          }
         ]
     },
     {
@@ -397,74 +439,6 @@ var MENUITEMS = [
                         value: '1.0'
                     }
                 ]
-            }
-        ]
-    },
-    {
-        label: 'Other',
-        main: [
-            {
-                state: '',
-                name: 'Menu Levels',
-                type: 'sub',
-                icon: 'ti-direction-alt',
-                children: [
-                    {
-                        state: '',
-                        name: 'Menu Level 2.1',
-                    }, {
-                        state: '',
-                        name: 'Menu Level 2.2',
-                        type: 'sub',
-                        children: [
-                            {
-                                state: '',
-                                name: 'Menu Level 2.2.1'
-                            },
-                            {
-                                state: '',
-                                name: 'Menu Level 2.2.2'
-                            }
-                        ]
-                    }, {
-                        state: '',
-                        name: 'Menu Level 2.3'
-                    }, {
-                        state: '',
-                        name: 'Menu Level 2.4',
-                        type: 'sub',
-                        children: [
-                            {
-                                state: '',
-                                name: 'Menu Level 2.4.1'
-                            },
-                            {
-                                state: '',
-                                name: 'Menu Level 2.4.2'
-                            }
-                        ]
-                    }
-                ]
-            }, {
-                state: 'hard-page',
-                name: 'Hard Page',
-                type: 'link',
-                icon: 'ti-layout-sidebar-left'
-            }
-        ]
-    }, {
-        label: 'Support',
-        main: [
-            {
-                state: 'documentation',
-                name: 'Documentation',
-                type: 'link',
-                icon: 'ti-file'
-            }, {
-                state: 'submit-issue',
-                name: 'Submit Issue',
-                type: 'link',
-                icon: 'ti-layout-list-post'
             }
         ]
     }

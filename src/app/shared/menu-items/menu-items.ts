@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 
 export interface BadgeItem {
   type: string;
@@ -40,31 +40,7 @@ const MENUITEMS = [
         name: 'Dashboard',
         type: 'link',
         icon: 'ti-home'
-      },
-      {
-        state: 'basic',
-        short_label: 'B',
-        name: 'Basic Components',
-        type: 'sub',
-        icon: 'ti-layout-grid2-alt',
-        children: [
-          {
-            state: 'button',
-            name: 'Button'
-          },
-          {
-            state: 'typography',
-            name: 'Typography'
-          }
-        ]
-      },
-      {
-        state: 'notifications',
-        short_label: 'n',
-        name: 'Notifications',
-        type: 'link',
-        icon: 'ti-crown'
-      },
+      }
     ],
   },
   {
@@ -90,6 +66,18 @@ const MENUITEMS = [
         name: 'P2P Lending',
         type: 'link',
         icon: 'ti-hand-open'
+      }
+    ]
+  },
+  {
+    label: 'Goals',
+    main: [
+      {
+        state: 'tasks',
+        short_label: 'T',
+        name: 'Tasks',
+        type: 'link',
+        icon: 'ti-target'
       }
     ]
   },
@@ -136,12 +124,31 @@ const MENUITEMS = [
         name: 'User Profile',
         type: 'link',
         icon: 'ti-user'
-      }
-    ]
-  },
-  {
-    label: 'Other',
-    main: [
+      },
+      {
+        state: 'basic',
+        short_label: 'B',
+        name: 'Basic Components',
+        type: 'sub',
+        icon: 'ti-layout-grid2-alt',
+        children: [
+          {
+            state: 'button',
+            name: 'Button'
+          },
+          {
+            state: 'typography',
+            name: 'Typography'
+          }
+        ]
+      },
+      {
+        state: 'notifications',
+        short_label: 'n',
+        name: 'Notifications',
+        type: 'link',
+        icon: 'ti-crown'
+      },
       {
         state: '',
         short_label: 'M',
@@ -191,13 +198,6 @@ const MENUITEMS = [
             ]
           }
         ]
-      },
-      {
-        state: 'hard-page',
-        short_label: 'S',
-        name: 'Simple Page',
-        type: 'link',
-        icon: 'ti-layout-sidebar-left'
       }
     ]
   }

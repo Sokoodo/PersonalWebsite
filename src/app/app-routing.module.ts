@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {AdminComponent} from './layout/admin/admin.component';
-import {AuthComponent} from './layout/auth/auth.component';
+import { AdminComponent } from './layout/admin/admin.component';
+import { AuthComponent } from './layout/auth/auth.component';
 
 const routes: Routes = [
   {
@@ -31,11 +31,17 @@ const routes: Routes = [
         path: 'user',
         loadChildren: () => import('./pages/user/profile/profile.module').then(m => m.ProfileModule)
       }, {
-        path: 'hard-page',
-        loadChildren: () => import('./pages/hard-page/hard-page.module').then(m => m.HardPageModule)
-      }, {
         path: 'crypto',
         loadChildren: () => import('./pages/crypto/crypto-section.module').then(m => m.CryptoSectionModule)
+      }, {
+        path: 'stocks',
+        loadChildren: () => import('./pages/stocks/stocks.module').then(m => m.StocksModule)
+      }, {
+        path: 'p2p-lending',
+        loadChildren: () => import('./pages/p2p-lending/p2p-lending.module').then(m => m.P2pLendingModule)
+      }, {
+        path: 'tasks',
+        loadChildren: () => import('./pages/tasks/tasks.module').then(m => m.TasksModule)
       }
     ]
   },
