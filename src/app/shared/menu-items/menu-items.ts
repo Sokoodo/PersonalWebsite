@@ -51,7 +51,7 @@ const MENUITEMS = [
         short_label: 'S',
         name: 'Stocks',
         type: 'link',
-        icon: 'ti-money'
+        icon: 'ti-bar-chart'
       },
       {
         state: 'crypto',
@@ -82,7 +82,7 @@ const MENUITEMS = [
     ]
   },
   {
-    label: 'Map And Extra Pages ',
+    label: 'Extra Pages',
     main: [
       {
         state: 'bootstrap-table',
